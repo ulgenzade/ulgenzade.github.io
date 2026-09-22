@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destek ve Yardım (Support) - Kur'an Meali</title>
+    <meta name="description" content="Kur'an Meali mobil uygulaması kullanıcı destek, sıkça sorulan sorular ve iletişim sayfası.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #F8F9FA;
+            --card-bg: #FFFFFF;
+            --text-primary: #1E293B;
+            --text-secondary: #64748B;
+            --accent: #2563EB;
+            --accent-soft: #EFF6FF;
+            --border-color: #E2E8F0;
+            --shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+            --radius: 16px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0F172A;
+                --card-bg: #1E293B;
+                --text-primary: #F8FAFC;
+                --text-secondary: #94A3B8;
+                --accent: #3B82F6;
+                --accent-soft: #1E3A8A33;
+                --border-color: #334155;
+                --shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--accent-soft);
+            color: var(--accent);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+
+        nav.top-nav {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        nav.top-nav a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        nav.top-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .faq-question {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+        }
+
+        .contact-box {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: var(--accent-soft);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-top: 24px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .contact-btn:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="badge">💬 Yardım ve İletişim</div>
+            <h1>Destek Merkezi</h1>
+            <p>Kur'an Meali uygulaması ile ilgili sorularınız, geri bildirimleriniz ve hata bildirimleriniz için buradayız.</p>
+            <nav class="top-nav">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="privacy.html">Gizlilik Politikası</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="card">
+                <h2>❓ Sıkça Sorulan Sorular (SSS)</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">1. Uygulama internet olmadan çalışır mı?</div>
+                    <div class="faq-answer">Evet! Kur'an metinleri, mealler, tefsir notları ve arama motoru tamamen cihazınızdaki yerel veritabanında saklanır. İnternetiniz olmasa dahi tüm sure ve ayetleri okuyabilirsiniz.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">2. Namaz vakitleri neden konum izni istiyor?</div>
+                    <div class="faq-answer">Namaz vakitlerinin ve kıble yönünün dakik olarak hesaplanabilmesi enlem ve boylam koordinatlarına bağlıdır. Konum bilginiz hiçbir sunucuya iletilmez, yalnızca telefonunuzda anlık hesaplanır. İsterseniz konum vermeden manuel şehir seçimi de yapabilirsiniz.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">3. Bildirimler vaktinde gelmiyor, ne yapmalıyım?</div>
+                    <div class="faq-answer">Android cihazınızın Pil Ayarlarından "Pil Optimizasyonu / Battery Optimization" seçeneğini Kur'an Meali uygulaması için "Kısıtlanmamış" veya "Optimize Edilmemiş" olarak ayarlayınız. Bazı üreticiler arka plan alarmlarını kısıtlayabilmektedir.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">4. Farklı mealleri nasıl karşılaştırabilirim?</div>
+                    <div class="faq-answer">Sure içerisindeki herhangi bir ayete dokunarak veya Ayarlar sayfasından aktif mütercimleri seçerek farklı mealleri aynı ekranda kıyaslayabilirsiniz.</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📩 Bizimle İletişime Geçin</h2>
+                <p>Sorularınız, meal önerileriniz veya uygulama deneyiminizi geliştirecek fikirleriniz için bize dilediğiniz zaman ulaşabilirsiniz:</p>
+                
+                <div class="contact-box">
+                    <div>
+                        <p style="font-weight: 600; color: var(--text-primary); margin-bottom: 4px;">E-Posta Desteği</p>
+                        <p style="color: var(--text-secondary); margin-bottom: 0;">Genellikle 24-48 saat içinde yanıt verilir.</p>
+                    </div>
+                    <a href="mailto:destek@kuranmeali.app" class="contact-btn" style="margin-left: auto;">E-Posta Gönder</a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2026 Kur'an Meali. Tüm hakları saklıdır.</p>
+        </footer>
+    </div>
+</body>
+</html>
